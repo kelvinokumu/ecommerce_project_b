@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }}</h1>
+
+    {% if is_admin %}
+        <p>You have <strong>Admin Access</strong>.</p>
+    {% else %}
+        <p>You are a regular user.</p>
+    {% endif %}
+</body>
+</html>

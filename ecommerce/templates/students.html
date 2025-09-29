@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades</title>
+</head>
+<body>
+    <h2>Grades</h2>
+    <ul>
+        {% for student in students %}
+            <li>
+                {{ student.name }} - 
+                {% if student.grade >= 50 %}
+                    Passed ✅
+                {% else %}
+                    Failed ❌
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

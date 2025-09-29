@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List</title>
+</head>
+<body>
+    <h2>Items to Buy:</h2>
+    <ul>
+        {% for item in shopping_list %}
+            <li>{{ item }}</li>
+        {% empty %}
+            <li>No items in the list.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
